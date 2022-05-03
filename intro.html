@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NFT Application</title>
+        <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./club.css" />
+        <meta charset="utf-8"/>
+      </head>
+      
+      <body>
+        <div class="box">
+            <nav>
+                
+                <ul>
+                    <li><a href="./intro.html" style="color:grey;"> Introduction</a></li>
+                        <li> <a href="./Demo.html" style="color:grey;">Demonstration</a></li>
+                        <li> <a href="./fb.html" style="color:grey;">Facebook App</a></li>
+                </ul>
+            </nav>
+            </div>
+            <p>In this project, we created an application called "Detect crop hints" that generates a similar cropped image for the given picture. This can be achieved by retrieving an image from the Facebook account of the user using "GraphAPI Tool" and the selected picture will send to Google cloud vision API, Based on the object, facial expressions, text detected in the image by API, it will generate labels. Using those labels this app provides similar images related to the labels.
+            </p>
+            <h1>TABLE OF CONTENTS:</h1>
+            <ol>
+                <li>Description</li>
+                <li>Demonstration of Application Working</li>
+                <li>GAE issues and GAE Datastore</li>
+                <li>Java code Documentation</li>
+                <li>Code</li>
+                <li>Youtube</li>
+                <li>Analytics Report</li>
+            </ol>
+            <h1>Java class</h1>
+            <p>Cloud.Java - This class performs the following task: </p>
+            <ol>
+                <li>Invokes Cloud vision API and fetch the images retrieved from Facebook.</li>
+                <li>Store and retrieve image_ID, image_URL, and the labels to/from the Datastore.</li></ol>
+
+            <p>Upload.Java - This servlet is used to create google images search link using label:</p>
+            <ol><li>All the functionalities are retrieved  first and then concatenated.</li>
+            <li>Then google search link is created and shown as final output.</li></ol>
+            <h1>JSP Files</h1>
+            <p>Home.jsp</p>
+            <ol>
+                <li>Provides an interface to select images either from Facebook or upload from the local file system.</li>
+                <li>If the user selects an image from Facebook, then pass the selected image will be sent to the 
+                    servlet for processing.</li>
+            </ol>
+    </body>
+    </html>
